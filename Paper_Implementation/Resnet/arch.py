@@ -86,7 +86,7 @@ class BottleNeck(nn.Module):
         out = self.bn1(out)
         out = self.relu(out)
 
-        out = self.conv2(x)
+        out = self.conv2(out)
         out = self.bn2(out)
         out = self.relu(out)
 

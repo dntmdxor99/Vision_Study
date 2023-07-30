@@ -68,8 +68,8 @@ def train():
         device = torch.device("cuda")
 
     pathToData = "/home/woo/Desktop/job/Vision_Study/Paper_Implementation/data"
-    batchSize = 256
-    model = arch.ResNet18().to(device)     # 모델 정의
+    batchSize = 128
+    model = arch.ResNet152().to(device)     # 모델 정의
 
     trainTransform = transforms.Compose([
         transforms.Resize((224, 224)),
