@@ -1,0 +1,334 @@
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1        [256, 64, 112, 112]           9,408
+       BatchNorm2d-2        [256, 64, 112, 112]             128
+              ReLU-3        [256, 64, 112, 112]               0
+         MaxPool2d-4          [256, 64, 56, 56]               0
+            Conv2d-5          [256, 64, 56, 56]          36,864
+       BatchNorm2d-6          [256, 64, 56, 56]             128
+              ReLU-7          [256, 64, 56, 56]               0
+            Conv2d-8          [256, 64, 56, 56]          36,864
+       BatchNorm2d-9          [256, 64, 56, 56]             128
+             ReLU-10          [256, 64, 56, 56]               0
+       BasicBlock-11          [256, 64, 56, 56]               0
+           Conv2d-12          [256, 64, 56, 56]          36,864
+      BatchNorm2d-13          [256, 64, 56, 56]             128
+             ReLU-14          [256, 64, 56, 56]               0
+           Conv2d-15          [256, 64, 56, 56]          36,864
+      BatchNorm2d-16          [256, 64, 56, 56]             128
+             ReLU-17          [256, 64, 56, 56]               0
+       BasicBlock-18          [256, 64, 56, 56]               0
+           Conv2d-19         [256, 128, 28, 28]          73,728
+      BatchNorm2d-20         [256, 128, 28, 28]             256
+             ReLU-21         [256, 128, 28, 28]               0
+           Conv2d-22         [256, 128, 28, 28]         147,456
+      BatchNorm2d-23         [256, 128, 28, 28]             256
+           Conv2d-24         [256, 128, 28, 28]           8,192
+      BatchNorm2d-25         [256, 128, 28, 28]             256
+             ReLU-26         [256, 128, 28, 28]               0
+       BasicBlock-27         [256, 128, 28, 28]               0
+           Conv2d-28         [256, 128, 28, 28]         147,456
+      BatchNorm2d-29         [256, 128, 28, 28]             256
+             ReLU-30         [256, 128, 28, 28]               0
+           Conv2d-31         [256, 128, 28, 28]         147,456
+      BatchNorm2d-32         [256, 128, 28, 28]             256
+             ReLU-33         [256, 128, 28, 28]               0
+       BasicBlock-34         [256, 128, 28, 28]               0
+           Conv2d-35         [256, 256, 14, 14]         294,912
+      BatchNorm2d-36         [256, 256, 14, 14]             512
+             ReLU-37         [256, 256, 14, 14]               0
+           Conv2d-38         [256, 256, 14, 14]         589,824
+      BatchNorm2d-39         [256, 256, 14, 14]             512
+           Conv2d-40         [256, 256, 14, 14]          32,768
+      BatchNorm2d-41         [256, 256, 14, 14]             512
+             ReLU-42         [256, 256, 14, 14]               0
+       BasicBlock-43         [256, 256, 14, 14]               0
+           Conv2d-44         [256, 256, 14, 14]         589,824
+      BatchNorm2d-45         [256, 256, 14, 14]             512
+             ReLU-46         [256, 256, 14, 14]               0
+           Conv2d-47         [256, 256, 14, 14]         589,824
+      BatchNorm2d-48         [256, 256, 14, 14]             512
+             ReLU-49         [256, 256, 14, 14]               0
+       BasicBlock-50         [256, 256, 14, 14]               0
+           Conv2d-51           [256, 512, 7, 7]       1,179,648
+      BatchNorm2d-52           [256, 512, 7, 7]           1,024
+             ReLU-53           [256, 512, 7, 7]               0
+           Conv2d-54           [256, 512, 7, 7]       2,359,296
+      BatchNorm2d-55           [256, 512, 7, 7]           1,024
+           Conv2d-56           [256, 512, 7, 7]         131,072
+      BatchNorm2d-57           [256, 512, 7, 7]           1,024
+             ReLU-58           [256, 512, 7, 7]               0
+       BasicBlock-59           [256, 512, 7, 7]               0
+           Conv2d-60           [256, 512, 7, 7]       2,359,296
+      BatchNorm2d-61           [256, 512, 7, 7]           1,024
+             ReLU-62           [256, 512, 7, 7]               0
+           Conv2d-63           [256, 512, 7, 7]       2,359,296
+      BatchNorm2d-64           [256, 512, 7, 7]           1,024
+             ReLU-65           [256, 512, 7, 7]               0
+       BasicBlock-66           [256, 512, 7, 7]               0
+AdaptiveAvgPool2d-67           [256, 512, 1, 1]               0
+           Linear-68                  [256, 10]           5,130
+================================================================
+Total params: 11,181,642
+Trainable params: 11,181,642
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 147.00
+Forward/backward pass size (MB): 16073.02
+Params size (MB): 42.65
+Estimated Total Size (MB): 16262.67
+----------------------------------------------------------------
+Epoch 1/100, current lr = 0.001
+train loss: 0.008143, val loss: 0.012770, accuracy: 14.44%, epoch time: 0.43 min
+Epoch 2/100, current lr = 0.001
+train loss: 0.006466, val loss: 0.008962, accuracy: 25.35%, epoch time: 0.43 min
+Epoch 3/100, current lr = 0.001
+train loss: 0.006006, val loss: 0.006369, accuracy: 38.07%, epoch time: 0.43 min
+Epoch 4/100, current lr = 0.001
+train loss: 0.005606, val loss: 0.006524, accuracy: 38.27%, epoch time: 0.43 min
+Epoch 5/100, current lr = 0.001
+train loss: 0.005300, val loss: 0.008682, accuracy: 31.08%, epoch time: 0.43 min
+Epoch 6/100, current lr = 0.001
+train loss: 0.004956, val loss: 0.008398, accuracy: 33.79%, epoch time: 0.43 min
+Epoch 7/100, current lr = 0.001
+train loss: 0.004625, val loss: 0.005428, accuracy: 49.53%, epoch time: 0.43 min
+Epoch 8/100, current lr = 0.001
+train loss: 0.004308, val loss: 0.006059, accuracy: 47.31%, epoch time: 0.43 min
+Epoch 9/100, current lr = 0.001
+train loss: 0.004067, val loss: 0.008306, accuracy: 38.16%, epoch time: 0.43 min
+Epoch 10/100, current lr = 0.001
+train loss: 0.003923, val loss: 0.005689, accuracy: 50.15%, epoch time: 0.43 min
+Epoch 11/100, current lr = 0.001
+train loss: 0.003464, val loss: 0.005426, accuracy: 53.12%, epoch time: 0.43 min
+Epoch 12/100, current lr = 0.001
+train loss: 0.003389, val loss: 0.005975, accuracy: 49.41%, epoch time: 0.43 min
+Epoch 13/100, current lr = 0.001
+train loss: 0.003117, val loss: 0.010955, accuracy: 38.81%, epoch time: 0.43 min
+Epoch 14/100, current lr = 0.001
+train loss: 0.002790, val loss: 0.004705, accuracy: 60.14%, epoch time: 0.43 min
+Epoch 15/100, current lr = 0.001
+train loss: 0.002590, val loss: 0.007303, accuracy: 49.36%, epoch time: 0.43 min
+Epoch 16/100, current lr = 0.001
+train loss: 0.002477, val loss: 0.004428, accuracy: 61.81%, epoch time: 0.43 min
+Epoch 17/100, current lr = 0.001
+train loss: 0.002256, val loss: 0.004904, accuracy: 60.61%, epoch time: 0.43 min
+Epoch 18/100, current lr = 0.001
+train loss: 0.002159, val loss: 0.006969, accuracy: 53.21%, epoch time: 0.43 min
+Epoch 19/100, current lr = 0.001
+train loss: 0.001925, val loss: 0.005380, accuracy: 59.31%, epoch time: 0.43 min
+Epoch 20/100, current lr = 0.001
+train loss: 0.001744, val loss: 0.008187, accuracy: 50.06%, epoch time: 0.43 min
+Epoch 21/100, current lr = 0.001
+train loss: 0.001740, val loss: 0.006844, accuracy: 50.76%, epoch time: 0.43 min
+Epoch 22/100, current lr = 0.001
+train loss: 0.001496, val loss: 0.005501, accuracy: 58.79%, epoch time: 0.43 min
+Epoch 23/100, current lr = 0.001
+train loss: 0.001275, val loss: 0.004667, accuracy: 63.78%, epoch time: 0.43 min
+Epoch 24/100, current lr = 0.001
+train loss: 0.000955, val loss: 0.005538, accuracy: 63.22%, epoch time: 0.43 min
+Epoch 25/100, current lr = 0.001
+train loss: 0.000746, val loss: 0.005648, accuracy: 61.88%, epoch time: 0.43 min
+Epoch 26/100, current lr = 0.001
+train loss: 0.000770, val loss: 0.009512, accuracy: 52.50%, epoch time: 0.43 min
+Epoch 27/100, current lr = 0.001
+train loss: 0.000701, val loss: 0.006064, accuracy: 61.29%, epoch time: 0.43 min
+Epoch 28/100, current lr = 0.0001
+train loss: 0.000336, val loss: 0.004259, accuracy: 69.81%, epoch time: 0.43 min
+Epoch 29/100, current lr = 0.0001
+train loss: 0.000156, val loss: 0.004173, accuracy: 69.99%, epoch time: 0.43 min
+Epoch 30/100, current lr = 0.0001
+train loss: 0.000109, val loss: 0.004208, accuracy: 70.11%, epoch time: 0.43 min
+Epoch 31/100, current lr = 0.0001
+train loss: 0.000089, val loss: 0.004205, accuracy: 70.23%, epoch time: 0.43 min
+Epoch 32/100, current lr = 0.0001
+train loss: 0.000076, val loss: 0.004230, accuracy: 70.49%, epoch time: 0.43 min
+Epoch 33/100, current lr = 0.0001
+train loss: 0.000068, val loss: 0.004266, accuracy: 70.36%, epoch time: 0.43 min
+Epoch 34/100, current lr = 0.0001
+train loss: 0.000063, val loss: 0.004282, accuracy: 70.45%, epoch time: 0.43 min
+Epoch 35/100, current lr = 0.0001
+train loss: 0.000057, val loss: 0.004296, accuracy: 70.67%, epoch time: 0.43 min
+Epoch 36/100, current lr = 0.0001
+train loss: 0.000053, val loss: 0.004320, accuracy: 70.54%, epoch time: 0.43 min
+Epoch 37/100, current lr = 0.0001
+train loss: 0.000047, val loss: 0.004340, accuracy: 70.47%, epoch time: 0.43 min
+Epoch 38/100, current lr = 0.0001
+train loss: 0.000044, val loss: 0.004356, accuracy: 70.44%, epoch time: 0.43 min
+Epoch 39/100, current lr = 0.0001
+train loss: 0.000042, val loss: 0.004373, accuracy: 70.51%, epoch time: 0.43 min
+Epoch 40/100, current lr = 0.0001
+train loss: 0.000042, val loss: 0.004385, accuracy: 70.60%, epoch time: 0.43 min
+Epoch 41/100, current lr = 1e-05
+train loss: 0.000036, val loss: 0.004393, accuracy: 70.41%, epoch time: 0.43 min
+Epoch 42/100, current lr = 1e-05
+train loss: 0.000037, val loss: 0.004400, accuracy: 70.60%, epoch time: 0.43 min
+Epoch 43/100, current lr = 1e-05
+train loss: 0.000038, val loss: 0.004394, accuracy: 70.55%, epoch time: 0.43 min
+Epoch 44/100, current lr = 1e-05
+train loss: 0.000036, val loss: 0.004386, accuracy: 70.64%, epoch time: 0.43 min
+Epoch 45/100, current lr = 1e-05
+train loss: 0.000036, val loss: 0.004397, accuracy: 70.58%, epoch time: 0.43 min
+Epoch 46/100, current lr = 1e-05
+train loss: 0.000036, val loss: 0.004396, accuracy: 70.65%, epoch time: 0.43 min
+Epoch 47/100, current lr = 1e-05
+train loss: 0.000036, val loss: 0.004398, accuracy: 70.47%, epoch time: 0.43 min
+Epoch 48/100, current lr = 1e-05
+train loss: 0.000035, val loss: 0.004407, accuracy: 70.56%, epoch time: 0.43 min
+Epoch 49/100, current lr = 1e-05
+train loss: 0.000035, val loss: 0.004398, accuracy: 70.71%, epoch time: 0.43 min
+Epoch 50/100, current lr = 1e-05
+train loss: 0.000034, val loss: 0.004403, accuracy: 70.65%, epoch time: 0.43 min
+Epoch 51/100, current lr = 1e-05
+train loss: 0.000034, val loss: 0.004402, accuracy: 70.66%, epoch time: 0.43 min
+Epoch 52/100, current lr = 1.0000000000000002e-06
+train loss: 0.000035, val loss: 0.004406, accuracy: 70.47%, epoch time: 0.43 min
+Epoch 53/100, current lr = 1.0000000000000002e-06
+train loss: 0.000037, val loss: 0.004396, accuracy: 70.61%, epoch time: 0.43 min
+Epoch 54/100, current lr = 1.0000000000000002e-06
+train loss: 0.000035, val loss: 0.004406, accuracy: 70.62%, epoch time: 0.43 min
+Epoch 55/100, current lr = 1.0000000000000002e-06
+train loss: 0.000035, val loss: 0.004402, accuracy: 70.54%, epoch time: 0.43 min
+Epoch 56/100, current lr = 1.0000000000000002e-06
+train loss: 0.000034, val loss: 0.004399, accuracy: 70.69%, epoch time: 0.43 min
+Epoch 57/100, current lr = 1.0000000000000002e-06
+train loss: 0.000034, val loss: 0.004398, accuracy: 70.67%, epoch time: 0.43 min
+Epoch 58/100, current lr = 1.0000000000000002e-06
+train loss: 0.000032, val loss: 0.004400, accuracy: 70.79%, epoch time: 0.43 min
+Epoch 59/100, current lr = 1.0000000000000002e-06
+train loss: 0.000033, val loss: 0.004397, accuracy: 70.67%, epoch time: 0.43 min
+Epoch 60/100, current lr = 1.0000000000000002e-06
+train loss: 0.000036, val loss: 0.004403, accuracy: 70.51%, epoch time: 0.43 min
+Epoch 61/100, current lr = 1.0000000000000002e-06
+train loss: 0.000035, val loss: 0.004398, accuracy: 70.61%, epoch time: 0.43 min
+Epoch 62/100, current lr = 1.0000000000000002e-06
+train loss: 0.000034, val loss: 0.004401, accuracy: 70.66%, epoch time: 0.43 min
+Epoch 63/100, current lr = 1.0000000000000002e-07
+train loss: 0.000034, val loss: 0.004403, accuracy: 70.66%, epoch time: 0.43 min
+Epoch 64/100, current lr = 1.0000000000000002e-07
+train loss: 0.000036, val loss: 0.004404, accuracy: 70.54%, epoch time: 0.43 min
+Epoch 65/100, current lr = 1.0000000000000002e-07
+train loss: 0.000034, val loss: 0.004406, accuracy: 70.58%, epoch time: 0.43 min
+Epoch 66/100, current lr = 1.0000000000000002e-07
+train loss: 0.000033, val loss: 0.004404, accuracy: 70.64%, epoch time: 0.43 min
+Epoch 67/100, current lr = 1.0000000000000002e-07
+train loss: 0.000038, val loss: 0.004408, accuracy: 70.58%, epoch time: 0.43 min
+Epoch 68/100, current lr = 1.0000000000000002e-07
+train loss: 0.000035, val loss: 0.004406, accuracy: 70.64%, epoch time: 0.43 min
+Epoch 69/100, current lr = 1.0000000000000002e-07
+train loss: 0.000035, val loss: 0.004400, accuracy: 70.74%, epoch time: 0.43 min
+Epoch 70/100, current lr = 1.0000000000000002e-07
+train loss: 0.000035, val loss: 0.004409, accuracy: 70.61%, epoch time: 0.43 min
+Epoch 71/100, current lr = 1.0000000000000002e-07
+train loss: 0.000033, val loss: 0.004409, accuracy: 70.49%, epoch time: 0.43 min
+Epoch 72/100, current lr = 1.0000000000000002e-07
+train loss: 0.000034, val loss: 0.004398, accuracy: 70.60%, epoch time: 0.43 min
+Epoch 73/100, current lr = 1.0000000000000002e-07
+train loss: 0.000035, val loss: 0.004408, accuracy: 70.61%, epoch time: 0.43 min
+Epoch 74/100, current lr = 1.0000000000000004e-08
+train loss: 0.000034, val loss: 0.004405, accuracy: 70.54%, epoch time: 0.43 min
+Epoch 75/100, current lr = 1.0000000000000004e-08
+train loss: 0.000036, val loss: 0.004401, accuracy: 70.67%, epoch time: 0.43 min
+Epoch 76/100, current lr = 1.0000000000000004e-08
+train loss: 0.000034, val loss: 0.004398, accuracy: 70.69%, epoch time: 0.44 min
+Epoch 77/100, current lr = 1.0000000000000004e-08
+train loss: 0.000034, val loss: 0.004397, accuracy: 70.66%, epoch time: 0.43 min
+Epoch 78/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004401, accuracy: 70.62%, epoch time: 0.43 min
+Epoch 79/100, current lr = 1.0000000000000004e-08
+train loss: 0.000036, val loss: 0.004402, accuracy: 70.53%, epoch time: 0.43 min
+Epoch 80/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004400, accuracy: 70.65%, epoch time: 0.43 min
+Epoch 81/100, current lr = 1.0000000000000004e-08
+train loss: 0.000033, val loss: 0.004411, accuracy: 70.69%, epoch time: 0.43 min
+Epoch 82/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004390, accuracy: 70.64%, epoch time: 0.43 min
+Epoch 83/100, current lr = 1.0000000000000004e-08
+train loss: 0.000033, val loss: 0.004402, accuracy: 70.53%, epoch time: 0.43 min
+Epoch 84/100, current lr = 1.0000000000000004e-08
+train loss: 0.000034, val loss: 0.004404, accuracy: 70.59%, epoch time: 0.43 min
+Epoch 85/100, current lr = 1.0000000000000004e-08
+train loss: 0.000033, val loss: 0.004408, accuracy: 70.50%, epoch time: 0.43 min
+Epoch 86/100, current lr = 1.0000000000000004e-08
+train loss: 0.000033, val loss: 0.004405, accuracy: 70.53%, epoch time: 0.43 min
+Epoch 87/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004403, accuracy: 70.58%, epoch time: 0.43 min
+Epoch 88/100, current lr = 1.0000000000000004e-08
+train loss: 0.000032, val loss: 0.004406, accuracy: 70.58%, epoch time: 0.43 min
+Epoch 89/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004398, accuracy: 70.71%, epoch time: 0.43 min
+Epoch 90/100, current lr = 1.0000000000000004e-08
+train loss: 0.000034, val loss: 0.004403, accuracy: 70.65%, epoch time: 0.43 min
+Epoch 91/100, current lr = 1.0000000000000004e-08
+train loss: 0.000033, val loss: 0.004401, accuracy: 70.61%, epoch time: 0.43 min
+Epoch 92/100, current lr = 1.0000000000000004e-08
+train loss: 0.000037, val loss: 0.004406, accuracy: 70.62%, epoch time: 0.43 min
+Epoch 93/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004398, accuracy: 70.64%, epoch time: 0.43 min
+Epoch 94/100, current lr = 1.0000000000000004e-08
+train loss: 0.000033, val loss: 0.004407, accuracy: 70.60%, epoch time: 0.43 min
+Epoch 95/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004412, accuracy: 70.55%, epoch time: 0.43 min
+Epoch 96/100, current lr = 1.0000000000000004e-08
+train loss: 0.000033, val loss: 0.004396, accuracy: 70.58%, epoch time: 0.43 min
+Epoch 97/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004397, accuracy: 70.70%, epoch time: 0.43 min
+Epoch 98/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004400, accuracy: 70.66%, epoch time: 0.43 min
+Epoch 99/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004404, accuracy: 70.61%, epoch time: 0.43 min
+Epoch 100/100, current lr = 1.0000000000000004e-08
+train loss: 0.000035, val loss: 0.004393, accuracy: 70.54%, epoch time: 0.43 min
+Training complete in 43.14 min
+Traceback (most recent call last):
+  File "/home/woo/Desktop/job/Vision_Study/Paper_Implementation/Resnet/train.py", line 150, in <module>
+    train()
+  File "/home/woo/Desktop/job/Vision_Study/Paper_Implementation/Resnet/train.py", line 110, in train
+    summary(model, input_size=(3, 224, 224), batch_size=batchSize, device='cuda')
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torchsummary/torchsummary.py", line 72, in summary
+    model(*x)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woo/Desktop/job/Vision_Study/Paper_Implementation/Resnet/arch.py", line 144, in forward
+    out = self.conv2(out)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/woo/Desktop/job/Vision_Study/Paper_Implementation/Resnet/arch.py", line 89, in forward
+    out = self.conv2(x)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [64, 64, 3, 3], expected input[2, 256, 56, 56] to have 64 channels, but got 256 channels instead
+Traceback (most recent call last):
+  File "/home/woo/Desktop/job/Vision_Study/Paper_Implementation/Resnet/train.py", line 150, in <module>
+    train()
+  File "/home/woo/Desktop/job/Vision_Study/Paper_Implementation/Resnet/train.py", line 110, in train
+    summary(model, input_size=(3, 224, 224), batch_size=batchSize, device='cuda')
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torchsummary/torchsummary.py", line 72, in summary
+    model(*x)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woo/Desktop/job/Vision_Study/Paper_Implementation/Resnet/arch.py", line 144, in forward
+    out = self.conv2(out)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/woo/Desktop/job/Vision_Study/Paper_Implementation/Resnet/arch.py", line 89, in forward
+    out = self.conv2(x)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/woo/miniconda3/envs/resnet/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [64, 64, 3, 3], expected input[2, 256, 56, 56] to have 64 channels, but got 256 channels instead

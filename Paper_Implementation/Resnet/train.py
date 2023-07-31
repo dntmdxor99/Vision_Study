@@ -90,7 +90,7 @@ def train():
 
     epochsNum = 100
     lossFunction = nn.CrossEntropyLoss()        # 손실함수 정의
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.1)        # 옵티마이저 정의
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)        # 옵티마이저 정의
     learningRateScheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=10)        # learning rate scheduler 정의
     sanityCheck = False
     pathToWeights = './models/weights.pt'
