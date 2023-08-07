@@ -21,7 +21,7 @@ def train():
         device = 'cpu'
 
     batchSize = 128
-    epochs = 1
+    epochs = 100
     learningRate = 1e-3
 
 
@@ -111,7 +111,7 @@ def train():
         if epoch // 10 == 0:
             torch.cuda.empty_cache()
     
-    LearningEndTime = time.tiime()
+    LearningEndTime = time.time()
     print(f'Training Complete in {(LearningEndTime - LearningStartTime) / 60:.2f} min')
     print(f'Best Val Loss : {bestLoss}, Best Val Accuracy : {bestAcc}, Epoch : {bestEpoch}')
 
