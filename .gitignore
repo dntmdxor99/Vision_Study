@@ -1,4 +1,4 @@
 Paper_Implementation/data/
 models/
-log/
+# log/
 *.pyc
